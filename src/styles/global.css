@@ -175,11 +175,3 @@ li {
 .doi-link {
 	font-size: 0.875rem;
 }
-
-footer.site {
-	border-top: 1px solid var(--border);
-	padding-top: 1.5rem;
-	padding-bottom: 2.5rem;
-	color: var(--muted);
-	font-size: 0.875rem;
-}

@@ -8,7 +8,7 @@ interface Props {
 
 const {
 	title = "Apoorva Mehta, MD, MBA",
-	description = "Physician, researcher, and builder — always learning, always exploring what's next.",
+	description = "Builder, researcher, and physician — always learning, always exploring what's next.",
 } = Astro.props;
 
 const nav = [
@@ -49,8 +49,5 @@ const path = Astro.url.pathname;
 		<main class="wrap">
 			<slot />
 		</main>
-		<footer class="site wrap">
-			🎾 USTA tennis since age 8 · ✈️ 27 countries and counting.
-		</footer>
 	</body>
 </html>

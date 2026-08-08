@@ -9,7 +9,9 @@ Apoorva Mehta, MD, MBA is a preliminary internal medicine resident at Mount Sina
 The owner is not a software developer and is building this hands-on for the experience, with Claude Code explaining structural and architectural decisions as they come up. Prioritize efficiency over exhaustive teaching — explain the *why* behind big decisions, not routine code line-by-line. New to GitHub, Node/npm, Astro, and Cloudflare — assume no familiarity the first time each comes up; don't re-explain once it's been covered.
 
 ## Design Direction
-Minimal navigation. An identity statement instead of a job title. Curated highlights instead of a resume. One small, deliberately personal detail (see Footer, below). Simple, not heavily engineered. Reference points: seancai.com, evis.dev, ashishgogula.in.
+Minimal navigation. An identity statement instead of a job title. Curated highlights instead of a resume. One small, deliberately personal detail (see Contact, below). Simple, not heavily engineered. Reference points: seancai.com, evis.dev, ashishgogula.in.
+
+Lean into the builder/founder identity, not the physician identity — medicine is the differentiator, not the lead. Watch for content drifting back to physician-first framing (it has happened twice) and correct it.
 
 ## Domain & Hosting
 - Domain: apoorvamehtamd.com, registered at Cloudflare. (Not apoorvamehta.com — that belongs to Instacart's founder. This also matches the LinkedIn handle already in use: linkedin.com/in/apoorvamehtamd.)
@@ -19,7 +21,7 @@ Minimal navigation. An identity statement instead of a job title. Curated highli
 - Git commit identity: Apoorva Mehta, using the GitHub noreply email (format: id+username@users.noreply.github.com — get the exact address from GitHub → Settings → Emails).
 
 ## Identity Statement (Homepage Headline)
-"Physician, researcher, and builder — always learning, always exploring what's next."
+"Builder, researcher, and physician — always learning, always exploring what's next."
 
 Use as-is for the homepage hero and, where length allows, the page meta description. Tone intent: accomplished but not pitchy — state what's been done, stay open/curious about what's next, avoid "selling" or founder-bravado framing.
 
@@ -44,9 +46,7 @@ Then a link to a full /publications page, built directly from `PUBLICATIONS.md` 
 
 **Mehta Ventures** — not a site section. It's a business vehicle for occasional advising/equity/consulting, not a public initiative; no dedicated page, no nav item, no mention anywhere on the site.
 
-**Contact** — apoorvamehta99@gmail.com and LinkedIn (linkedin.com/in/apoorvamehtamd). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space.
-
-**Footer** — one line, sitewide: "🎾 USTA tennis since age 8 · ✈️ 27 countries and counting."
+**Contact** — apoorvamehta99@gmail.com and LinkedIn (linkedin.com/in/apoorvamehtamd). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space. Closes with the one personal detail: "🎾 USTA tennis since age 8 · ✈️ 27 countries and counting." (moved here from a sitewide footer — it read as easy to miss at the bottom of every page).
 
 **Writing/Content** — not in v1. Add once creator content (LinkedIn, TikTok, Instagram, Facebook, Snapchat) actually launches.
 
