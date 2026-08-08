@@ -1,0 +1,107 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Layout from "../layouts/Layout.astro";
+
+// process.cwd() is the project root for both `astro dev` and `astro build`
+// (import.meta.url isn't reliable here since bundling relocates this chunk).
+const raw = fs.readFileSync(
+	path.resolve(process.cwd(), "PUBLICATIONS.md"),
+	"utf-8",
+);
+
+interface Entry {
+	html: string;
+	doi: string | null;
+	featured: boolean;
+	firstAuthor: boolean;
+}
+
+function extractSection(md: string, heading: string): Entry[] {
+	const startIdx = md.indexOf(`## ${heading}`);
+	if (startIdx === -1) return [];
+	const rest = md.slice(startIdx + heading.length + 3);
+	const nextIdx = rest.indexOf("\n## ");
+	const body = nextIdx === -1 ? rest : rest.slice(0, nextIdx);
+
+	return body
+		.split("\n")
+		.map((l) => l.trim())
+		.filter((l) => /^\d+\.\s/.test(l))
+		.map((line) => {
+			const text = line.replace(/^\d+\.\s*/, "");
+			const featured = text.includes("🏠");
+			const firstAuthor = text.includes("★");
+			let clean = text.replace(/🏠\s*/, "").replace(/★\s*/, "").trim();
+
+			const doiMatch = clean.match(/DOI:\s*(\S+?)\.?$/);
+			const doi = doiMatch ? doiMatch[1] : null;
+			if (doiMatch) clean = clean.slice(0, doiMatch.index).trim();
+
+			const html = clean
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+				.replace(/\*(.+?)\*/g, "<em>$1</em>");
+
+			return { html, doi, featured, firstAuthor };
+		});
+}
+
+const peerReviewed = extractSection(raw, "Peer-Reviewed Publications");
+const oral = extractSection(raw, "Oral Presentations");
+const posters = extractSection(raw, "Poster Presentations");
+
+const sections = [
+	{ title: "Peer-Reviewed Publications", entries: peerReviewed },
+	{ title: "Oral Presentations", entries: oral },
+	{ title: "Poster Presentations", entries: posters },
+];
+---
+
+<Layout title="Publications — Apoorva Mehta, MD, MBA">
+	<h1>Publications</h1>
+	<p>
+		Complete list of peer-reviewed publications and presentations, in
+		reverse chronological order within each section. ★ marks first-author
+		work; 🏠 marks work also featured on the <a href="/research"
+			>Research</a
+		> page.
+	</p>
+
+	{sections.map((section) => (
+		<>
+			<h2>{section.title}</h2>
+			<ol class="pub-list">
+				{section.entries.map((entry) => (
+					<li>
+						<span set:html={entry.html} />
+						{(entry.firstAuthor || entry.featured) && (
+							<span class="pub-tags">
+								{entry.firstAuthor && (
+									<span class="tag">★ First author</span>
+								)}
+								{entry.featured && (
+									<span class="tag">
+										🏠 Featured on homepage
+									</span>
+								)}
+							</span>
+						)}
+						{entry.doi && (
+							<div class="meta">
+								<a
+									class="doi-link"
+									href={`https://doi.org/${entry.doi}`}
+								>
+									doi.org/{entry.doi}
+								</a>
+							</div>
+						)}
+					</li>
+				))}
+			</ol>
+		</>
+	))}
+</Layout>

@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = "Apoorva Mehta, MD, MBA",
+	description = "MD, MBA by training. Founder & investor by instinct — always thinking about what's next.",
+} = Astro.props;
+
+const nav = [
+	{ href: "/", label: "Home" },
+	{ href: "/now", label: "Now" },
+	{ href: "/track-record", label: "Track Record" },
+	{ href: "/research", label: "Research" },
+	{ href: "/mehta-ventures", label: "Mehta Ventures" },
+	{ href: "/contact", label: "Contact" },
+];
+
+const path = Astro.url.pathname;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header class="site wrap">
+			<nav class="site">
+				{nav.map((item) => (
+					<a
+						href={item.href}
+						aria-current={path === item.href ? "page" : undefined}
+					>
+						{item.label}
+					</a>
+				))}
+			</nav>
+		</header>
+		<main class="wrap">
+			<slot />
+		</main>
+		<footer class="site wrap">
+			🎾 USTA tennis since age 8 · ✈️ 27 countries and counting.
+		</footer>
+	</body>
+</html>

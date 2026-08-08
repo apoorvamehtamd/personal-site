@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const featured = [
+	{
+		title: "Deep Learning Image Processing Models in Dermatopathology",
+		meta: "MDPI Diagnostics · October 2025 · First author",
+		doi: "10.3390/diagnostics15192517",
+	},
+	{
+		title:
+			"Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people",
+		meta: "Nature Medicine · Accepted June 2026",
+		doi: null,
+	},
+	{
+		title:
+			"LLM-Based Explainable Medical AI is a Double-Edged Sword in Human-AI Collaborative Diagnosis of Skin Diseases",
+		meta: "Nature Medicine · Accepted May 2026",
+		doi: null,
+	},
+	{
+		title:
+			"Retrieval Augmented Generation-Enabled Large Language Model for Risk Stratification of Cutaneous Squamous Cell Carcinoma",
+		meta: "JAMA Dermatology · August 2025",
+		doi: "10.1001/jamadermatol.2025.1614",
+	},
+];
+---
+
+<Layout title="Research — Apoorva Mehta, MD, MBA">
+	<h1>Research</h1>
+	<p>
+		40+ peer-reviewed publications and presentations spanning clinical AI,
+		dermatology, and digital health.
+	</p>
+
+	<ul class="pub-list">
+		{featured.map((p) => (
+			<li>
+				<div>{p.title}</div>
+				<div class="meta">
+					{p.meta}
+					{p.doi && (
+						<>
+							{" · "}
+							<a
+								class="doi-link"
+								href={`https://doi.org/${p.doi}`}
+							>
+								doi.org/{p.doi}
+							</a>
+						</>
+					)}
+				</div>
+			</li>
+		))}
+	</ul>
+
+	<p><a href="/publications">See the full list of publications →</a></p>
+</Layout>

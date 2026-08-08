@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const ventures = [
+	{
+		name: "ChartR",
+		summary:
+			"Co-founded an AI-enabled health-tech company, implementing operational AI within enterprise healthcare and designing long-horizon reinforcement learning environments for healthcare and clinical AI.",
+	},
+	{
+		name: "Rock Health Capital",
+		summary:
+			"Evaluated hundreds of early-stage digital health startups — commercial, technical, and clinical diligence — with end-to-end involvement on investments including Vitalize and HealthMC.",
+	},
+	{
+		name: "SkinCheck",
+		summary:
+			"Grew a digital dermatology platform to 100,000+ downloads and 6,500 monthly active users, shaped its health-plan partnership strategy, and helped raise its pre-seed round.",
+	},
+];
+---
+
+<Layout title="Track Record — Apoorva Mehta, MD, MBA">
+	<h1>Track Record</h1>
+	{ventures.map((v) => (
+		<div class="section">
+			<h3>{v.name}</h3>
+			<p>{v.summary}</p>
+		</div>
+	))}
+</Layout>

@@ -1,17 +1,53 @@
 ---
+import Layout from "../layouts/Layout.astro";
 
+const highlights = [
+	{
+		href: "/now",
+		title: "Now",
+		blurb: "Resident physician, training toward dermatology.",
+	},
+	{
+		href: "/track-record",
+		title: "Track Record",
+		blurb: "ChartR, Rock Health Capital, SkinCheck.",
+	},
+	{
+		href: "/research",
+		title: "Research",
+		blurb: "40+ publications in clinical AI and dermatology.",
+	},
+	{
+		href: "/mehta-ventures",
+		title: "Mehta Ventures",
+		blurb: "Advising, equity, and consulting.",
+	},
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<p class="hero">
+		MD, MBA by training. Founder &amp; investor by instinct — always thinking
+		about what's next.
+	</p>
+	<p>
+		I'm a physician trained at Columbia, currently completing residency
+		before starting dermatology training at the University of Maryland in
+		2027. Alongside medicine, I've co-founded a health-tech company, worked
+		in venture, and helped grow an early-stage digital health startup — and
+		I'm now building Mehta Ventures.
+	</p>
+	<p>
+		I'm always glad to hear from founders, operators, and investors working
+		at the edge of health and AI — see <a href="/contact">Contact</a>.
+	</p>
+
+	<div class="highlights">
+		{highlights.map((h) => (
+			<a class="highlight-card" href={h.href}>
+				<h3>{h.title}</h3>
+				<p>{h.blurb}</p>
+			</a>
+		))}
+	</div>
+</Layout>
