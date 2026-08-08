@@ -113,23 +113,6 @@ li {
 	margin: 0 0 2rem;
 }
 
-.proof-row {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem 2.25rem;
-	font-size: 0.8125rem;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: var(--muted);
-	font-weight: 600;
-	margin-bottom: 2.5rem;
-}
-
-.proof-row strong {
-	color: var(--ink);
-	font-weight: 700;
-}
-
 .section {
 	margin-bottom: 2.25rem;
 }

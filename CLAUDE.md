@@ -3,7 +3,7 @@
 ## Purpose
 A personal brand site — not a job-search tool. It establishes and carries an ongoing professional brand, showing the breadth of Apoorva's work rather than pitching for a specific job. No resume-style "Experience" list anywhere, no "why hire me" framing. Lead with an identity statement, not a job title.
 
-Apoorva Mehta, MD, MBA is a preliminary internal medicine resident at Mount Sinai Elmhurst, matched into dermatology residency at the University of Maryland starting 2027. MD/MBA from Columbia. Co-founded ChartR (AI-enabled health-tech, no longer active). Former Rock Health Capital venture fellow and SkinCheck Chief of Staff. 40+ peer-reviewed publications in clinical AI and dermatology. Currently building Mehta Ventures LLC (advising, equity, consulting) and exploring what's next.
+Apoorva Mehta, MD, MBA is a preliminary internal medicine resident at Mount Sinai Elmhurst, matched into dermatology residency at the University of Maryland starting 2027. MD/MBA from Columbia. Co-founded ChartR (AI-enabled health-tech, no longer active). Former Rock Health Capital venture fellow and SkinCheck Chief of Staff. 40+ peer-reviewed publications in clinical AI and dermatology. Mehta Ventures LLC exists as a business vehicle for occasional advising/equity/consulting work — it's not a public-facing initiative and should not be surfaced on the site (see Site Structure). Always exploring what's next.
 
 ## Who's Building This
 The owner is not a software developer and is building this hands-on for the experience, with Claude Code explaining structural and architectural decisions as they come up. Prioritize efficiency over exhaustive teaching — explain the *why* behind big decisions, not routine code line-by-line. New to GitHub, Node/npm, Astro, and Cloudflare — assume no familiarity the first time each comes up; don't re-explain once it's been covered.
@@ -19,9 +19,9 @@ Minimal navigation. An identity statement instead of a job title. Curated highli
 - Git commit identity: Apoorva Mehta, using the GitHub noreply email (format: id+username@users.noreply.github.com — get the exact address from GitHub → Settings → Emails).
 
 ## Identity Statement (Homepage Headline)
-"MD, MBA by training. Founder & investor by instinct — always thinking about what's next."
+"Physician, researcher, and builder — always learning, always exploring what's next."
 
-Use as-is for the homepage hero and, where length allows, the page meta description.
+Use as-is for the homepage hero and, where length allows, the page meta description. Tone intent: accomplished but not pitchy — state what's been done, stay open/curious about what's next, avoid "selling" or founder-bravado framing.
 
 ## Site Structure
 
@@ -42,7 +42,7 @@ Use as-is for the homepage hero and, where length allows, the page meta descript
 
 Then a link to a full /publications page, built directly from `PUBLICATIONS.md` in this folder.
 
-**Mehta Ventures** — advising, equity, consulting. Scope to be finalized once the LLC is approved.
+**Mehta Ventures** — not a site section. It's a business vehicle for occasional advising/equity/consulting, not a public initiative; no dedicated page, no nav item, no mention anywhere on the site.
 
 **Contact** — apoorvamehta99@gmail.com and LinkedIn (linkedin.com/in/apoorvamehtamd). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space.
 
