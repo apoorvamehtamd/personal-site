@@ -21,7 +21,7 @@ Lean into the builder/founder identity, not the physician identity — medicine 
 - Git commit identity: Apoorva Mehta, using the GitHub noreply email (format: id+username@users.noreply.github.com — get the exact address from GitHub → Settings → Emails).
 
 ## Identity Statement (Homepage Headline)
-"Builder, researcher, and physician: always learning, always exploring what's next."
+"One of the few people building healthcare AI who's also treated patients — always exploring what's next."
 
 Use as-is for the homepage hero and, where length allows, the page meta description. Tone intent: accomplished but not pitchy — state what's been done, stay open/curious about what's next, avoid "selling" or founder-bravado framing.
 
