@@ -35,8 +35,9 @@ const path = Astro.url.pathname;
 	</head>
 	<body>
 		<header class="site wrap">
+			<a class="brand" href="/">Apoorva Mehta, MD, MBA</a>
 			<nav class="site">
-				{nav.map((item) => (
+				{nav.filter((item) => item.href !== "/").map((item) => (
 					<a
 						href={item.href}
 						aria-current={path === item.href ? "page" : undefined}

@@ -1,53 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const highlights = [
-	{
-		href: "/now",
-		title: "Now",
-		blurb: "Resident physician, training toward dermatology.",
-	},
-	{
-		href: "/track-record",
-		title: "Track Record",
-		blurb: "ChartR, Rock Health Capital, SkinCheck.",
-	},
-	{
-		href: "/research",
-		title: "Research",
-		blurb: "40+ publications in clinical AI and dermatology.",
-	},
-	{
-		href: "/mehta-ventures",
-		title: "Mehta Ventures",
-		blurb: "Advising, equity, and consulting.",
-	},
+const links = [
+	{ href: "/now", label: "Now" },
+	{ href: "/track-record", label: "Track Record" },
+	{ href: "/research", label: "Research" },
+	{ href: "/mehta-ventures", label: "Mehta Ventures" },
+	{ href: "/contact", label: "Contact" },
 ];
 ---
 
 <Layout>
 	<p class="hero">
-		MD, MBA by training. Founder &amp; investor by instinct — always thinking
-		about what's next.
+		MD, MBA by training. Founder &amp; investor by instinct — always
+		thinking about what's next.
 	</p>
+	<div class="proof-row">
+		<span><strong>40+</strong> publications</span>
+		<span><strong>100K+</strong> users grown</span>
+		<span><strong>100s</strong> of startups diligenced</span>
+	</div>
 	<p>
 		I'm a physician trained at Columbia, currently completing residency
-		before starting dermatology training at the University of Maryland in
-		2027. Alongside medicine, I've co-founded a health-tech company, worked
-		in venture, and helped grow an early-stage digital health startup — and
-		I'm now building Mehta Ventures.
-	</p>
-	<p>
-		I'm always glad to hear from founders, operators, and investors working
-		at the edge of health and AI — see <a href="/contact">Contact</a>.
+		before dermatology training at the University of Maryland. Alongside
+		medicine, I've co-founded a health-tech company, evaluated hundreds of
+		digital health startups in venture, and helped grow an early-stage
+		platform to six figures of users — and I'm now building{" "}
+		<a href="/mehta-ventures">Mehta Ventures</a>.
 	</p>
 
-	<div class="highlights">
-		{highlights.map((h) => (
-			<a class="highlight-card" href={h.href}>
-				<h3>{h.title}</h3>
-				<p>{h.blurb}</p>
-			</a>
-		))}
+	<div class="links">
+		{links.map((l) => <a href={l.href}>{l.label}</a>)}
 	</div>
 </Layout>
