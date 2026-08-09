@@ -38,15 +38,40 @@ header.site {
 	padding-bottom: 1.5rem;
 }
 
+.brand-row {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 1.5rem;
+}
+
 .brand {
-	display: block;
-	font-size: 0.75rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--accent);
 	font-weight: 600;
 	text-decoration: none;
-	margin-bottom: 1.5rem;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.social a {
+	display: inline-flex;
+	color: var(--muted);
+}
+
+.social a:hover {
+	color: var(--accent);
+}
+
+.social svg {
+	width: 15px;
+	height: 15px;
 }
 
 nav.site {
