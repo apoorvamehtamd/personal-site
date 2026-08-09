@@ -11,6 +11,10 @@ The owner is not a software developer and is building this hands-on for the expe
 ## Design Direction
 Minimal navigation. An identity statement instead of a job title. Curated highlights instead of a resume. One small, deliberately personal detail (see Contact, below). Simple, not heavily engineered. Reference points: seancai.com, evis.dev, ashishgogula.in.
 
+Nav links (Track Record, Research, Now, Contact) live in the top header only — do not repeat them in a links row at the bottom of a page, it's redundant. Header brand name (top-left) should read visibly larger than the LinkedIn/X icons next to it, not the same size.
+
+Say "publications," not "papers," when referring to the 40+ peer-reviewed output — matches the Research page's wording.
+
 Lean into the builder/founder identity, not the physician identity — medicine is the differentiator, not the lead. Watch for content drifting back to physician-first framing (it has happened twice) and correct it.
 
 ## Domain & Hosting
@@ -27,7 +31,7 @@ Use as-is for the homepage hero and, where length allows, the page meta descript
 
 ## Site Structure
 
-**Home** — identity statement + short intro.
+**Home** — identity statement + short intro. Closes with: "Always thinking about what's next & learning from people smarter than me." — owner's own humble/curious closing-line style; match this register if it needs to change, not a hard sales CTA.
 
 **Now** — current only: resident physician in preliminary residency for dermatology (Mount Sinai Elmhurst, moving to University of Maryland dermatology in 2027), actively exploring what's next. ChartR does not belong in this section.
 

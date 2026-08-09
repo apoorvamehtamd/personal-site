@@ -46,7 +46,7 @@ header.site {
 }
 
 .brand {
-	font-size: 0.875rem;
+	font-size: 1rem;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--accent);
@@ -70,8 +70,8 @@ header.site {
 }
 
 .social svg {
-	width: 15px;
-	height: 15px;
+	width: 13px;
+	height: 13px;
 }
 
 nav.site {
@@ -152,23 +152,6 @@ li {
 	color: var(--muted);
 	font-size: 0.9375rem;
 	margin: 0 0 0.5rem;
-}
-
-.links {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem 1.75rem;
-	border-top: 1px solid var(--border);
-	padding-top: 1.5rem;
-	margin-top: 1rem;
-}
-
-.links a {
-	color: var(--ink);
-	text-decoration: none;
-	font-size: 0.9375rem;
-	border-bottom: 1px solid var(--accent-line);
-	padding-bottom: 2px;
 }
 
 .pub-list {

@@ -1,12 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-const links = [
-	{ href: "/track-record", label: "Track Record" },
-	{ href: "/research", label: "Research" },
-	{ href: "/now", label: "Now" },
-	{ href: "/contact", label: "Contact" },
-];
 ---
 
 <Layout>
@@ -22,16 +15,9 @@ const links = [
 		grow a digital health platform from the ground-up. Alongside that,
 		I'm a physician and researcher — completing my preliminary residency
 		at Mount Sinai Elmhurst before dermatology training at the University
-		of Maryland, with 40+ peer-reviewed papers in clinical AI &amp;
-		dermatology along the way. I completed my MD, MBA at Columbia
+		of Maryland, with 40+ peer-reviewed publications in clinical AI
+		&amp; dermatology along the way. I completed my MD, MBA at Columbia
 		University in NYC.
 	</p>
-	<p>
-		I'm always glad to connect — reach out via{" "}
-		<a href="/contact">Contact</a>.
-	</p>
-
-	<div class="links">
-		{links.map((l) => <a href={l.href}>{l.label}</a>)}
-	</div>
+	<p>Always thinking about what's next &amp; learning from people smarter than me.</p>
 </Layout>
