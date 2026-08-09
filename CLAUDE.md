@@ -37,12 +37,12 @@ Use as-is for the homepage hero and, where length allows, the page meta descript
 
 **Track Record** — past ventures, past tense:
 - **ChartR** (co-founded): a company building long-horizon reinforcement learning environments for clinical AI, alongside automating front- and back-office workflows in enterprise healthcare. The RL environment work is the more distinctive half — lead with it, not with "health-tech company" framing, which undersells it.
-- **Rock Health Capital**: evaluated thousands of early-stage digital health startups (not hundreds — corrected by owner) — commercial, technical, and clinical diligence — with end-to-end involvement on investments including Vitalize and HealthMC.
+- **Rock Health Capital**: evaluated thousands of early-stage digital health startups (not hundreds — corrected by owner), involved end-to-end from sourcing to diligence and memo writing.
 - **SkinCheck**: grew a digital dermatology platform to 100,000+ downloads and 6,500 monthly active users, shaped its health-plan partnership strategy, and helped raise its pre-seed round.
 
 **Research** — framing line: 40+ peer-reviewed publications and presentations spanning clinical AI, dermatology, and digital health. Then these four, in this order:
 1. "Deep Learning Image Processing Models in Dermatopathology" — MDPI Diagnostics, Oct 2025 (first author). DOI: 10.3390/diagnostics15192517
-2. "Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people" — Nature Medicine, accepted June 2026.
+2. "Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people" — Nature Medicine, Aug 2026. DOI: 10.1038/s41591-026-04553-w
 3. "LLM-Based Explainable Medical AI is a Double-Edged Sword in Human-AI Collaborative Diagnosis of Skin Diseases" — Nature Medicine, accepted May 2026.
 4. "Retrieval Augmented Generation-Enabled Large Language Model for Risk Stratification of Cutaneous Squamous Cell Carcinoma" — JAMA Dermatology, Aug 2025. DOI: 10.1001/jamadermatol.2025.1614
 
@@ -50,7 +50,7 @@ Then a link to a full /publications page, built directly from `PUBLICATIONS.md` 
 
 **Mehta Ventures** — not a site section. It's a business vehicle for occasional advising/equity/consulting, not a public initiative; no dedicated page, no nav item, no mention anywhere on the site.
 
-**Contact** — no public email (owner doesn't want it exposed). Links to LinkedIn (linkedin.com/in/apoorvamehtamd) and X (x.com/apoorvamehtamd) as the ways to reach out; add Instagram/Substack/Facebook links here too once that content actually launches (see Writing/Content, below). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space. Closes with personal detail(s) — currently "🎾 USTA tennis since age 8 · ✈️ 27 countries and counting," owner open to adding more (moved here from a sitewide footer — it read as easy to miss at the bottom of every page).
+**Contact** — no public email (owner doesn't want it exposed). Links to LinkedIn (linkedin.com/in/apoorvamehtamd) and X (x.com/apoorvamehtamd) as the ways to reach out; add Instagram/Substack/Facebook links here too once that content actually launches (see Writing/Content, below). Intro line: "I'm always excited to connect & learn from other builders & investors." Closes with "A little bit about me." followed by personal-detail bullets (currently football fandom, tennis, and travel) — owner open to adding more (moved here from a sitewide footer — it read as easy to miss at the bottom of every page).
 
 **Writing/Content** — not in v1. Add once creator content (LinkedIn, TikTok, Instagram, Facebook, Snapchat) actually launches.
 

@@ -7,9 +7,9 @@ Complete list for Apoorva Mehta, MD, MBA — compiled directly from source (CV),
 ## Peer-Reviewed Publications
 (Reverse chronological)
 
-1. 🏠 Xu X, Hu H, Zhang H, Wang WK, Wang R, Soenksen LR, et al., **Mehta A**, et al. "Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people." *Nature Medicine*. Accepted June 2026.
+1. 🏠 Xu X, Hu H, Zhang H, Wang WK, Wang R, Soenksen LR, et al., **Mehta A**, et al. "Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people." *Nature Medicine*. August 2026. DOI: 10.1038/s41591-026-04553-w
 2. 🏠 Xu X, Hu H, Zhang H, Wang WK, Wang R, Soenksen LR, et al., **Mehta A**, et al. "LLM-Based Explainable Medical AI is a Double-Edged Sword in Human-AI Collaborative Diagnosis of Skin Diseases." *Nature Medicine*. Accepted May 2026.
-3. Perry N, Encarnacion I, Desir N, **Mehta A**, Taylor SC, Takeshita J, Margolis DJ, Mollanazar N. "Fast Track to Care: Reducing New Patient Wait Times in Dermatology Using an Electronic Medical Record-Based Algorithmic Scheduling Strategy." *NEJM Catalyst*. Accepted April 2026.
+3. Perry N, Encarnacion I, Desir N, **Mehta A**, Taylor SC, Takeshita J, Margolis DJ, Mollanazar N. "Fast Track to Care: Reducing New Patient Wait Times in Dermatology Using an Electronic Medical Record-Based Algorithmic Scheduling Strategy." *NEJM Catalyst*. July 2026. DOI: 10.1056/CAT.25.0274
 4. Levine J, **Mehta A**, O'Hagan R, Guttman-Yassky E, Lamb A. "Decision Making Factors for Biologic Therapy in Atopic Dermatitis (AD): A Clinical Review." *Dermatitis*. March 2026. DOI: 10.1177/17103568261423754
 5. Encarnacion I, Desir N, Schell N, **Mehta A**, Ogunleye T, Taylor S. "Increasing Visit Complexity in Alopecia Management: A Five-Year DataDerm Analysis." *JAAD*. February 2026. DOI: 10.1016/j.jaad.2026.02.060
 6. Rosenberg AL, Wu A, DeBusk L, **Mehta A**, McAleer L, Dominguez R, Rigel D, Mauskar M, Merola J, Nezafati K. "Lichen Planus Autoimmune Comorbidities: A Retrospective Case-Control Study." *Dermatology Online Journal*. January 2026. DOI: 10.25251/9e2hym37
