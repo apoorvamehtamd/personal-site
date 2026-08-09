@@ -88,9 +88,14 @@ nav.site a {
 	padding-bottom: 2px;
 }
 
-nav.site a:hover,
-nav.site a[aria-current="page"] {
+nav.site a:hover {
 	border-bottom-color: var(--accent-line);
+}
+
+/* Darker than the hover line so the current page stays distinguishable and
+   clears the 3:1 contrast minimum for state indicators (WCAG 1.4.11). */
+nav.site a[aria-current="page"] {
+	border-bottom-color: var(--accent);
 }
 
 main {
@@ -129,14 +134,6 @@ ol {
 
 li {
 	margin-bottom: 0.5rem;
-}
-
-.hero {
-	font-family: var(--serif);
-	font-weight: 500;
-	font-size: 2.5rem;
-	line-height: 1.25;
-	margin: 0 0 2rem;
 }
 
 .section {
