@@ -161,23 +161,28 @@ li {
 }
 
 .pub-list li {
+	display: flex;
+	gap: 0.75rem;
 	padding: 0.875rem 0;
 	border-bottom: 1px solid var(--border);
 }
 
 .pub-tags {
-	display: inline-flex;
-	gap: 0.375rem;
-	margin-left: 0.5rem;
+	display: flex;
+	gap: 0.25rem;
+	flex: 0 0 2.75rem;
+	padding-top: 0.125rem;
 }
 
 .tag {
-	font-size: 0.75rem;
-	color: var(--muted);
-	border: 1px solid var(--border);
-	border-radius: 999px;
-	padding: 0.0625rem 0.5rem;
-	white-space: nowrap;
+	font-size: 0.9375rem;
+	line-height: 1;
+	cursor: default;
+}
+
+.pub-entry {
+	flex: 1;
+	min-width: 0;
 }
 
 .doi-link {

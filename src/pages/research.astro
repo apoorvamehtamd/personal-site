@@ -1,31 +1,28 @@
 ---
+import fs from "node:fs";
+import path from "node:path";
 import Layout from "../layouts/Layout.astro";
+import { extractSection } from "../lib/publications";
 
-const featured = [
-	{
-		title: "Deep Learning Image Processing Models in Dermatopathology",
-		meta: "MDPI Diagnostics · October 2025 · First author",
-		doi: "10.3390/diagnostics15192517",
-	},
-	{
-		title:
-			"Divergent impacts of explainable AI for dermatological diagnosis on clinicians versus lay people",
-		meta: "Nature Medicine · Accepted June 2026",
-		doi: null,
-	},
-	{
-		title:
-			"LLM-Based Explainable Medical AI is a Double-Edged Sword in Human-AI Collaborative Diagnosis of Skin Diseases",
-		meta: "Nature Medicine · Accepted May 2026",
-		doi: null,
-	},
-	{
-		title:
-			"Retrieval Augmented Generation-Enabled Large Language Model for Risk Stratification of Cutaneous Squamous Cell Carcinoma",
-		meta: "JAMA Dermatology · August 2025",
-		doi: "10.1001/jamadermatol.2025.1614",
-	},
+const raw = fs.readFileSync(
+	path.resolve(process.cwd(), "PUBLICATIONS.md"),
+	"utf-8",
+);
+
+const peerReviewed = extractSection(raw, "Peer-Reviewed Publications");
+
+// Order these four intentionally, independent of PUBLICATIONS.md's
+// reverse-chronological order — see CLAUDE.md Research section.
+const order = [
+	"Deep Learning Image Processing Models in Dermatopathology",
+	"Divergent impacts of explainable AI",
+	"LLM-Based Explainable Medical AI",
+	"Retrieval Augmented Generation-Enabled Large Language Model for Risk Stratification",
 ];
+
+const featured = order.map((key) =>
+	peerReviewed.find((entry) => entry.featured && entry.html.includes(key)),
+);
 ---
 
 <Layout title="Research — Apoorva Mehta, MD, MBA">
@@ -35,27 +32,25 @@ const featured = [
 		dermatology, and digital health.
 	</p>
 
-	<ul class="pub-list">
-		{featured.map((p) => (
-			<li>
-				<div>{p.title}</div>
-				<div class="meta">
-					{p.meta}
-					{p.doi && (
-						<>
-							{" · "}
+	<ol class="pub-list">
+		{featured.map((entry) =>
+			entry ? (
+				<li>
+					<span set:html={entry.html} />
+					{entry.doi && (
+						<div class="meta">
 							<a
 								class="doi-link"
-								href={`https://doi.org/${p.doi}`}
+								href={`https://doi.org/${entry.doi}`}
 							>
-								doi.org/{p.doi}
+								doi.org/{entry.doi}
 							</a>
-						</>
+						</div>
 					)}
-				</div>
-			</li>
-		))}
-	</ul>
+				</li>
+			) : null,
+		)}
+	</ol>
 
 	<p><a href="/publications">See the full list of publications →</a></p>
 </Layout>

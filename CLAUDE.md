@@ -50,7 +50,7 @@ Then a link to a full /publications page, built directly from `PUBLICATIONS.md` 
 
 **Mehta Ventures** — not a site section. It's a business vehicle for occasional advising/equity/consulting, not a public initiative; no dedicated page, no nav item, no mention anywhere on the site.
 
-**Contact** — apoorvamehta99@gmail.com and LinkedIn (linkedin.com/in/apoorvamehtamd). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space. Closes with the one personal detail: "🎾 USTA tennis since age 8 · ✈️ 27 countries and counting." (moved here from a sitewide footer — it read as easy to miss at the bottom of every page).
+**Contact** — no public email (owner doesn't want it exposed). Links to LinkedIn (linkedin.com/in/apoorvamehtamd) and X (x.com/apoorvamehtamd) as the ways to reach out; add Instagram/Substack/Facebook links here too once that content actually launches (see Writing/Content, below). Open to advising/consulting conversations, and open to connecting with other builders and investors in the space. Closes with personal detail(s) — currently "🎾 USTA tennis since age 8 · ✈️ 27 countries and counting," owner open to adding more (moved here from a sitewide footer — it read as easy to miss at the bottom of every page).
 
 **Writing/Content** — not in v1. Add once creator content (LinkedIn, TikTok, Instagram, Facebook, Snapchat) actually launches.
 
