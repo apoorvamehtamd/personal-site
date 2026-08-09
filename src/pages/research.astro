@@ -36,17 +36,19 @@ const featured = order.map((key) =>
 		{featured.map((entry) =>
 			entry ? (
 				<li>
-					<span set:html={entry.html} />
-					{entry.doi && (
-						<div class="meta">
-							<a
-								class="doi-link"
-								href={`https://doi.org/${entry.doi}`}
-							>
-								doi.org/{entry.doi}
-							</a>
-						</div>
-					)}
+					<span class="pub-entry">
+						<span set:html={entry.html} />
+						{entry.doi && (
+							<div class="meta">
+								<a
+									class="doi-link"
+									href={`https://doi.org/${entry.doi}`}
+								>
+									doi.org/{entry.doi}
+								</a>
+							</div>
+						)}
+					</span>
 				</li>
 			) : null,
 		)}
