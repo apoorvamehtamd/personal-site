@@ -33,7 +33,7 @@ Use as-is for the homepage hero and, where length allows, the page meta descript
 
 **Home** — identity statement + short intro. Closes with: "Always thinking about what's next & learning from people smarter than me." — owner's own humble/curious closing-line style; match this register if it needs to change, not a hard sales CTA.
 
-**Now** — current only: resident physician in preliminary residency for dermatology (Mount Sinai Elmhurst, moving to University of Maryland dermatology in 2027), actively exploring what's next. ChartR does not belong in this section.
+**Now** — current only: actively exploring what's next (reading, building, staying in conversation with founders/investors/potential customers), plus an "Areas of interest:" list (Life sciences & pharma; Human data; Reimagining healthcare operations & care delivery). Residency status lives on Home, not repeated here. ChartR does not belong in this section.
 
 **Track Record** — past ventures, past tense:
 - **ChartR** (co-founded): a company building long-horizon reinforcement learning environments for clinical AI, alongside automating front- and back-office workflows in enterprise healthcare. The RL environment work is the more distinctive half — lead with it, not with "health-tech company" framing, which undersells it.
